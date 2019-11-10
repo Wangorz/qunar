@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c97c8ee8-dde3-4877-a11a-68785b85960b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawl_sight_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl_sight_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawl_sight_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl_sight_url.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +175,14 @@
       <option name="presentableId" value="Default" />
       <updated>1571544146735</updated>
     </task>
+    <task id="LOCAL-00001" summary="lpush start_urls">
+      <created>1573364036913</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573364036913</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +195,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lpush start_urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="lpush start_urls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
