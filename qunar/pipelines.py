@@ -9,15 +9,26 @@ import pymysql
 import redis
 import pymongo
 
+# class SightUrlRedisPipeline(object):
+#
+#     def __init__(self):
+#         self.redis_db = redis.Redis(host='47.97.198.174', port=6379, db=0)
+#
+#     def process_item(self, item, spider):
+#         # print('here')
+#         self.redis_db.lpush('qunar:sight_urls', item['url'])
+#         # print('insert successfully.')
+#         return item
+
 class SightUrlRedisPipeline(object):
 
     def __init__(self):
-        self.redis_db = redis.Redis(host='47.97.198.174', port=6379, db=0)
+        self.client = pymongo.MongoClient(host='47.97.198.174', port=27017)
+        self.db = self.client.qunar
+        self.collection = self.db.sighturls
 
     def process_item(self, item, spider):
-        # print('here')
-        self.redis_db.lpush('qunar:sight_urls', item['url'])
-        # print('insert successfully.')
+        self.collection.insert_one(item)
         return item
 
 
@@ -41,15 +52,6 @@ class SightInfoMongodbPipeline(object):
             else:
                 print(item['subject'] + 'already exists.')
         return item
-
-
-
-
-
-
-
-
-
 
     # def __init__(self):
     #     self.connection = pymysql.connect(

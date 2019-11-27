@@ -28,8 +28,10 @@ class SightItem(scrapy.Item):
     coordinate = scrapy.Field()         # 坐标
     subject = scrapy.Field()            # 主题
     comments = scrapy.Field()           # 评论
+    heat = scrapy.Field()               # 热度
 
 class UrlItem(scrapy.Item):
+    _id = scrapy.Field()
     url = scrapy.Field()                # 景点url
 
 class TicketsItem(scrapy.Item):

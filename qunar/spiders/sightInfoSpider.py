@@ -29,7 +29,7 @@ class SightInfoSpider(RedisSpider):
         request_url = urllib.parse.unquote(response.url)
         pat = re.compile(r'([\u4e00-\u9fa5]+)')
         subject = pat.findall(request_url)[0]
-        fwelag = False
+        flag = False
         item = SightItem()
         imgUrls = {}
         imgUrlList = []
@@ -51,6 +51,8 @@ class SightInfoSpider(RedisSpider):
             item['coordinate'] = split_item[5]
             item['sightId'] = response.xpath('//*[@id="mp-tickets"]/@data-sightid').extract()[0]
             item['_id'] = response.xpath('//*[@id="mp-tickets"]/@data-sightid').extract()[0]
+            comment_count = response.xpath('/html/body/div[2]/div[2]/div[2]/div[4]/span[4]/a/text()').extract()[0]
+            item['heat'] = re.findall(r'(\d+)', comment_count)[0]
             imgUrlList += response.xpath('//*[@id="mp-slider-content"]/div/img/@src').extract()
             imgUrlList += response.xpath('//*[@class="mp-charact-event"]/div/img/@src').extract()
             for index, imgUrl in enumerate(imgUrlList):

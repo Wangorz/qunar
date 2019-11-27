@@ -53,12 +53,11 @@ COOKIES_ENABLED = False
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     'qunar.middlewares.QunarDownloaderMiddleware': 543,
-    # 'qunar.middlewares.RandomProxyMiddleware': 544,
+    'qunar.middlewares.ProxyMiddleware': 544,
     'qunar.middlewares.RandomUserAgentMiddleware': 545,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-
 }
-DOWNLOAD_DELAY = 2
+DOWNLOAD_DELAY = 0.2
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -112,8 +111,8 @@ REDIS_HOST = '47.97.198.174'
 REDIS_PORT = 6379
 
 
-# LOG_FILE = "mySpider.log"
-# LOG_LEVEL = "INFO"
+LOG_FILE = "mySpider.log"
+LOG_LEVEL = "INFO"
 
 # CRITICAL - 严重错误(critical)
 # ERROR - 一般错误(regular errors)

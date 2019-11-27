@@ -1,0 +1,85 @@
+2019-11-27 18:40:52 [scrapy.utils.log] INFO: Scrapy 1.7.3 started (bot: qunar)
+2019-11-27 18:40:52 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.18362-SP0
+2019-11-27 18:40:52 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'qunar', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.2, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'LOG_FILE': 'mySpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'qunar.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['qunar.spiders']}
+2019-11-27 18:40:52 [scrapy.extensions.telnet] INFO: Telnet Password: 9f8ad4ce6deb09ec
+2019-11-27 18:40:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-11-27 18:40:52 [qunar] INFO: Reading start URLs from redis key 'qunar:start_urls' (batch size: 16, encoding: utf-8
+2019-11-27 18:40:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'qunar.middlewares.QunarDownloaderMiddleware',
+ 'qunar.middlewares.ProxyMiddleware',
+ 'qunar.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-11-27 18:40:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-11-27 18:40:53 [scrapy.middleware] INFO: Enabled item pipelines:
+['qunar.pipelines.SightUrlRedisPipeline']
+2019-11-27 18:40:53 [scrapy.core.engine] INFO: Spider opened
+2019-11-27 18:40:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-11-27 18:40:53 [qunar] INFO: Spider opened: qunar
+2019-11-27 18:40:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-11-27 18:41:53 [scrapy.extensions.logstats] INFO: Crawled 203 pages (at 203 pages/min), scraped 2993 items (at 2993 items/min)
+2019-11-27 18:42:53 [scrapy.extensions.logstats] INFO: Crawled 404 pages (at 201 pages/min), scraped 6022 items (at 3029 items/min)
+2019-11-27 18:43:53 [scrapy.extensions.logstats] INFO: Crawled 612 pages (at 208 pages/min), scraped 9101 items (at 3079 items/min)
+2019-11-27 18:44:53 [scrapy.extensions.logstats] INFO: Crawled 814 pages (at 202 pages/min), scraped 12101 items (at 3000 items/min)
+2019-11-27 18:45:25 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://piao.qunar.com/ticket/list.htm?keyword=%E4%B8%AD%E5%9B%BD&subject=%E6%BB%91%E9%9B%AA&page=47. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-11-27 18:45:53 [scrapy.extensions.logstats] INFO: Crawled 1003 pages (at 189 pages/min), scraped 14962 items (at 2861 items/min)
+2019-11-27 18:46:32 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://piao.qunar.com/ticket/list.htm?keyword=%E4%B8%AD%E5%9B%BD&subject=%E6%B8%B8%E4%B9%90%E5%9C%BA&page=40. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-11-27 18:46:53 [scrapy.extensions.logstats] INFO: Crawled 1205 pages (at 202 pages/min), scraped 17976 items (at 3014 items/min)
+2019-11-27 18:47:53 [scrapy.extensions.logstats] INFO: Crawled 1400 pages (at 195 pages/min), scraped 20889 items (at 2913 items/min)
+2019-11-27 18:48:53 [scrapy.extensions.logstats] INFO: Crawled 1589 pages (at 189 pages/min), scraped 23706 items (at 2817 items/min)
+2019-11-27 18:49:53 [scrapy.extensions.logstats] INFO: Crawled 1791 pages (at 202 pages/min), scraped 26730 items (at 3024 items/min)
+2019-11-27 18:50:53 [scrapy.extensions.logstats] INFO: Crawled 2001 pages (at 210 pages/min), scraped 29854 items (at 3124 items/min)
+2019-11-27 18:51:53 [scrapy.extensions.logstats] INFO: Crawled 2203 pages (at 202 pages/min), scraped 32906 items (at 3052 items/min)
+2019-11-27 18:52:53 [scrapy.extensions.logstats] INFO: Crawled 2407 pages (at 204 pages/min), scraped 35960 items (at 3054 items/min)
+2019-11-27 18:53:53 [scrapy.extensions.logstats] INFO: Crawled 2591 pages (at 184 pages/min), scraped 38717 items (at 2757 items/min)
+2019-11-27 18:54:53 [scrapy.extensions.logstats] INFO: Crawled 2793 pages (at 202 pages/min), scraped 41727 items (at 3010 items/min)
+2019-11-27 18:55:53 [scrapy.extensions.logstats] INFO: Crawled 2997 pages (at 204 pages/min), scraped 44822 items (at 3095 items/min)
+2019-11-27 18:56:54 [scrapy.extensions.logstats] INFO: Crawled 3179 pages (at 182 pages/min), scraped 47329 items (at 2507 items/min)
+2019-11-27 18:57:55 [scrapy.extensions.logstats] INFO: Crawled 3258 pages (at 79 pages/min), scraped 48543 items (at 1214 items/min)
+2019-11-27 18:58:54 [scrapy.extensions.logstats] INFO: Crawled 3341 pages (at 83 pages/min), scraped 49797 items (at 1254 items/min)
+2019-11-27 18:59:54 [scrapy.extensions.logstats] INFO: Crawled 3442 pages (at 101 pages/min), scraped 51273 items (at 1476 items/min)
+2019-11-27 19:00:54 [scrapy.extensions.logstats] INFO: Crawled 3584 pages (at 142 pages/min), scraped 53425 items (at 2152 items/min)
+2019-11-27 19:01:53 [scrapy.extensions.logstats] INFO: Crawled 3737 pages (at 153 pages/min), scraped 55770 items (at 2345 items/min)
+2019-11-27 19:02:53 [scrapy.extensions.logstats] INFO: Crawled 3928 pages (at 191 pages/min), scraped 58625 items (at 2855 items/min)
+2019-11-27 19:02:59 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://piao.qunar.com/ticket/list.htm?keyword=%E4%B8%AD%E5%9B%BD&subject=%E5%B1%95%E9%A6%86&page=159. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-11-27 19:03:01 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://piao.qunar.com/ticket/list.htm?keyword=%E4%B8%AD%E5%9B%BD&subject=%E5%B1%95%E9%A6%86&page=150. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-11-27 19:03:53 [scrapy.extensions.logstats] INFO: Crawled 4122 pages (at 194 pages/min), scraped 61527 items (at 2902 items/min)
+2019-11-27 19:04:05 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://piao.qunar.com/ticket/list.htm?keyword=%E4%B8%AD%E5%9B%BD&subject=%E5%8D%9A%E7%89%A9%E9%A6%86&page=10. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-11-27 19:04:53 [scrapy.extensions.logstats] INFO: Crawled 4315 pages (at 193 pages/min), scraped 64402 items (at 2875 items/min)
+2019-11-27 19:05:53 [scrapy.extensions.logstats] INFO: Crawled 4503 pages (at 188 pages/min), scraped 67215 items (at 2813 items/min)
+2019-11-27 19:06:53 [scrapy.extensions.logstats] INFO: Crawled 4708 pages (at 205 pages/min), scraped 70266 items (at 3051 items/min)
+2019-11-27 19:07:53 [scrapy.extensions.logstats] INFO: Crawled 4915 pages (at 207 pages/min), scraped 73366 items (at 3100 items/min)
+2019-11-27 19:08:53 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://piao.qunar.com/ticket/list.htm?keyword=%E4%B8%AD%E5%9B%BD&subject=%E6%B8%B8%E4%B9%90%E5%9C%BA&page=127. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-11-27 19:08:53 [scrapy.extensions.logstats] INFO: Crawled 5116 pages (at 201 pages/min), scraped 76367 items (at 3001 items/min)
+2019-11-27 19:09:53 [scrapy.extensions.logstats] INFO: Crawled 5322 pages (at 206 pages/min), scraped 79452 items (at 3085 items/min)
+2019-11-27 19:10:53 [scrapy.extensions.logstats] INFO: Crawled 5524 pages (at 202 pages/min), scraped 82470 items (at 3018 items/min)
+2019-11-27 19:11:53 [scrapy.extensions.logstats] INFO: Crawled 5728 pages (at 204 pages/min), scraped 85504 items (at 3034 items/min)
+2019-11-27 19:12:53 [scrapy.extensions.logstats] INFO: Crawled 5938 pages (at 210 pages/min), scraped 88637 items (at 3133 items/min)
+2019-11-27 19:13:53 [scrapy.extensions.logstats] INFO: Crawled 6137 pages (at 199 pages/min), scraped 91628 items (at 2991 items/min)
+2019-11-27 19:14:53 [scrapy.extensions.logstats] INFO: Crawled 6340 pages (at 203 pages/min), scraped 94673 items (at 3045 items/min)
+2019-11-27 19:15:53 [scrapy.extensions.logstats] INFO: Crawled 6530 pages (at 190 pages/min), scraped 97511 items (at 2838 items/min)
+2019-11-27 19:16:53 [scrapy.extensions.logstats] INFO: Crawled 6727 pages (at 197 pages/min), scraped 100477 items (at 2966 items/min)
+2019-11-27 19:17:53 [scrapy.extensions.logstats] INFO: Crawled 6930 pages (at 203 pages/min), scraped 103536 items (at 3059 items/min)
+2019-11-27 19:18:53 [scrapy.extensions.logstats] INFO: Crawled 7130 pages (at 200 pages/min), scraped 106514 items (at 2978 items/min)
+2019-11-27 19:19:53 [scrapy.extensions.logstats] INFO: Crawled 7334 pages (at 204 pages/min), scraped 109585 items (at 3071 items/min)
+2019-11-27 19:20:53 [scrapy.extensions.logstats] INFO: Crawled 7535 pages (at 201 pages/min), scraped 112598 items (at 3013 items/min)
+2019-11-27 19:21:53 [scrapy.extensions.logstats] INFO: Crawled 7621 pages (at 86 pages/min), scraped 113886 items (at 1288 items/min)
+2019-11-27 19:22:53 [scrapy.extensions.logstats] INFO: Crawled 7621 pages (at 0 pages/min), scraped 113886 items (at 0 items/min)
+2019-11-27 19:23:53 [scrapy.extensions.logstats] INFO: Crawled 7621 pages (at 0 pages/min), scraped 113886 items (at 0 items/min)
+2019-11-27 19:24:53 [scrapy.extensions.logstats] INFO: Crawled 7621 pages (at 0 pages/min), scraped 113886 items (at 0 items/min)
+2019-11-27 19:25:53 [scrapy.extensions.logstats] INFO: Crawled 7621 pages (at 0 pages/min), scraped 113886 items (at 0 items/min)

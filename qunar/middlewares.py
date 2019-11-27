@@ -10,6 +10,7 @@ from fake_useragent import UserAgent
 from qunar.tools.get_ip import GetProxyIP
 from scrapy.utils.project import get_project_settings
 import random
+import base64
 
 class QunarSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -137,3 +138,14 @@ class RandomUserAgentMiddleware(object):
         def get_ua():
             return getattr(self.ua, self.ua_type)
         request.headers.setdefault('User-Agent', get_ua())
+
+proxyServer = "http://http-dyn.abuyun.com:9020"
+proxyUser = "H7N9D936F33V854D"
+proxyPass = "BC4548922A8A1F56"
+proxyAuth = "Basic " + base64.urlsafe_b64encode(bytes((proxyUser + ":" + proxyPass), "ascii")).decode("utf8")
+
+class ProxyMiddleware(object):
+    def process_request(self, request, spider):
+        request.meta["proxy"] = proxyServer
+        request.headers["Proxy-Authorization"] = proxyAuth
+

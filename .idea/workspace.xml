@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c97c8ee8-dde3-4877-a11a-68785b85960b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/crawl_sight_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl_sight_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawl_sight_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl_sight_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mySpider.log" beforeDir="false" afterPath="$PROJECT_DIR$/mySpider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qunar/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/qunar/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qunar/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/qunar/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qunar/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/qunar/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qunar/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qunar/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qunar/spiders/sightInfoSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/qunar/spiders/sightInfoSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qunar/spiders/sightUrlSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/qunar/spiders/sightUrlSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qunar/tools/testpymongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/qunar/tools/testpymongo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crawl_sight_info">
+  <component name="RunManager" selected="Python.testpymongo">
     <configuration name="crawl_sight_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="qunar" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,6 +70,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl_sight_info.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="crawl_sight_url" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="qunar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl_sight_url.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,27 +141,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testPymysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="qunar" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qunar/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qunar/tools/testPymysql.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="testpymongo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="qunar" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testpymongo" />
+        <item itemvalue="Python.crawl_sight_url" />
         <item itemvalue="Python.crawl_sight_info" />
         <item itemvalue="Python.entrypoint" />
-        <item itemvalue="Python.testpymongo" />
         <item itemvalue="Python.sight" />
-        <item itemvalue="Python.testPymysql" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +190,28 @@
       <option name="project" value="LOCAL" />
       <updated>1573364036913</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lpush start_urls">
+      <created>1573364163223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573364163223</updated>
+    </task>
+    <task id="LOCAL-00003" summary="lpush start_urls">
+      <created>1573364290905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573364290905</updated>
+    </task>
+    <task id="LOCAL-00004" summary="lpush start_urls">
+      <created>1573364305820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573364305820</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,7 +219,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
